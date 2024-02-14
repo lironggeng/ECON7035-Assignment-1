@@ -22,3 +22,6 @@ if __name__ == '__main__':
 
     cleaned = clean(args.input1, args.input2)
     cleaned.to_csv(args.output, index=False)
+
+    data = pd.DataFrame.from_records(cleaned)
+    print(data.shape)
